@@ -38,7 +38,8 @@ module Frameworks
     ],
     "java" => [
       /Set-Cookie:\s+JSESSIONID=/i,
-      /Server:\s+Jetty/i
+      /Server:\s+Jetty/i,
+      /Server:\sApache-Coyote/i
     ],
     "ruby/rails" => [
       /Set-Cookie:\s+_[a-zA-Z0-9.-_]+_session/i
