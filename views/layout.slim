@@ -6,4 +6,14 @@ html
   body
 
     .container
+      .page-header
+        h1 Technology Lookup
+
+      form method="post" action="/lookup"
+        .form-group
+          textarea.form-control name="urls" rows=5 placeholder="Enter URLs to lookup..."
+          p.help-block One URL per line, use the URL of the "log in" page of a site for best results.
+
+        button.btn.btn-default type="submit" Submit
+
       == yield
