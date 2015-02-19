@@ -1,0 +1,12 @@
+h1 Framework Lookup Results
+
+table.table.table-hover
+  thead
+    tr
+      th Domain
+      th Framework
+  tbody
+    - @results.each do |domain, framework|
+      tr
+        td = domain
+        td = framework
