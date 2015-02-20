@@ -3,11 +3,11 @@ hr
 table.table.table-hover
   thead
     tr
-      th Domain
-      th Framework
+      th URL
+      th Technology
   tbody
-    - @results.each do |domain, framework|
+    - @results.each do |url, technology|
       tr
         td
-          a href=domain #{domain}
-        td = framework
+          a href=url #{url}
+        td = technology
